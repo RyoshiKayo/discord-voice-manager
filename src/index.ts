@@ -52,7 +52,7 @@ export const updateVoiceChatPermissions = (
       } else if (state === "leave") {
         guildMember.roles.remove(vcRole);
         console.log(
-          `Removed "IN VC" role from ${guildMemberName} (${guildMember.id})`
+          `Removed "IN VC" role from ${guildMemberName} (${guildMember.id}) in "${guild.name}" (${guild.id})`
         );
       }
     } else {
